@@ -39,6 +39,18 @@ def submit():
 
     return redirect('/success')
 
+@app.route('/submittodoitem', methods=['POST'])
+def submitTodo():
+
+    item = {
+        "itemName": request.form['itemName'],
+        "itemDescription": request.form['itemDescription']
+    }
+
+    collection.insert_one(item)
+
+    return "Stored Successfully"
+
 @app.route('/success')
 def success():
     return render_template("success.html")
