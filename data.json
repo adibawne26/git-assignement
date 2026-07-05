@@ -8,10 +8,5 @@
         "id": 2,
         "name": "Sumit",
         "course": "Computer Engineering"
-    },
-    {
-        "id": 3,
-        "name": "Manav",
-        "course": "Mechanical Engineering"
     }
 ]
